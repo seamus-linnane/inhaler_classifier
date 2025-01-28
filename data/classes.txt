@@ -1,0 +1,6 @@
+class_number: 2
+class_1_name: ellipta
+class_1_count: 330
+class_2_name: mdi
+class_2_count: 291
+min_class_count: 291
