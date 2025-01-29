@@ -40,7 +40,7 @@ inhaler_classifier/
 ├── README.md           # Project documentation
 ├── requirements.txt    # Project dependencies
 
-🔧 Installation
+## 🔧 Installation
 
 Prerequisites
 	•	Python 3.9+
