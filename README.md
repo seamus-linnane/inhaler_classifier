@@ -39,6 +39,7 @@ inhaler_classifier/
 │   ├── inhaler_finetune.py  # Model training and fine-tuning
 ├── README.md           # Project documentation
 ├── requirements.txt    # Project dependencies
+```
 
 ## 🔧 Installation
 
