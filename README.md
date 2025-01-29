@@ -50,23 +50,21 @@ Prerequisites
 Setup
 	1.	Clone the Repository:
 
-git clone https://github.com/seamus-linnane/inhaler_classifier.git
-cd inhaler_classifier
-
+      git clone https://github.com/seamus-linnane/inhaler_classifier.git
+      cd inhaler_classifier
 
 	2.	Install Dependencies:
 
-pip install -r requirements.txt
+      pip install -r requirements.txt
 
+	3.	Ensure Your Dataset is Organized as Follows:  
+   These folders should contain your images before processing.
 
-	3.	Ensure Your Dataset is Organized as Follows:
+      data/raw/  
+      ├── named_class_1/  
+      ├── named_class_2/  
+         etc  
 
-data/raw/
-├── named_class_1/
-├── named_class_2/
-    etc
-
-These folders should contain your images before processing.
 
 🔄 Workflow
 
@@ -76,7 +74,7 @@ Run main.py to execute the full pipeline, including dataset validation, standard
 
 python src/main.py
 
-The script will:
+The script will:  
 	•	Check if classes.txt exists (if not, generate it).
 	•	Verify that data/raw/ contains valid images.
 	•	Convert raw data into train/test/validate sets.
@@ -89,7 +87,7 @@ Training is included in main.py, but you can also run fine-tuning separately:
 
 python src/inhaler_finetune.py
 
-This will:
+This will:  
 	•	Freeze pre-trained ResNet layers.
 	•	Train the classifier head for 6 epochs.
 	•	Fine-tune the entire network for 20 additional epochs.
@@ -134,10 +132,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 - [ ] Expand dataset with more inhaler types.
 - [ ] Implement data augmentation for robustness.
 
-📌 Next Steps
-	•	Upload your trained model to GitHub.
+📌 Next Steps   
 	•	Evaluate on additional test datasets.
-	•	Consider deploying with Streamlit or FastAPI.
 
 🔥 Want to Contribute?
 
