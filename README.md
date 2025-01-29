@@ -43,23 +43,18 @@ inhaler_classifier/
 
 ## 🔧 Installation
 
-Prerequisites
-	•	Python 3.9+
-	•	torch, torchvision, matplotlib, and other Python libraries listed in requirements.txt.
+Prerequisites   
+	•	Python 3.9+   
+	•	torch, torchvision, matplotlib, and other Python libraries listed in requirements.txt.   
 
-Setup
-	1.	Clone the Repository:
-
-      git clone https://github.com/seamus-linnane/inhaler_classifier.git
-      cd inhaler_classifier
-
-	2.	Install Dependencies:
-
-      pip install -r requirements.txt
-
-	3.	Ensure Your Dataset is Organized as Follows:  
+Setup  
+	1.	Clone the Repository:   
+      git clone https://github.com/seamus-linnane/inhaler_classifier.git  
+      cd inhaler_classifier  
+	2.	Install Dependencies:  
+      pip install -r requirements.txt  
+	3.	Ensure Your Dataset is Organized as Follows:   
    These folders should contain your images before processing.
-
       data/raw/  
       ├── named_class_1/  
       ├── named_class_2/  
