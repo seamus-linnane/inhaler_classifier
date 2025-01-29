@@ -49,19 +49,19 @@ Prerequisites
 
 Setup  
 	1.	Clone the Repository:   
-      git clone https://github.com/seamus-linnane/inhaler_classifier.git  
-      cd inhaler_classifier  
+      --git clone https://github.com/seamus-linnane/inhaler_classifier.git  
+      --cd inhaler_classifier  
 	2.	Install Dependencies:  
-      pip install -r requirements.txt  
+      --pip install -r requirements.txt  
 	3.	Ensure Your Dataset is Organized as Follows:   
-   These folders should contain your images before processing.
+      --These folders should contain your images before processing.  
       data/raw/  
       ├── named_class_1/  
       ├── named_class_2/  
          etc  
 
 
-🔄 Workflow
+## 🔄 Workflow
 
 1️⃣ Automatically Prepare the Dataset
 
@@ -94,7 +94,7 @@ Training & Validation Loss
 
 Training & Validation Accuracy
 
-🏆 Results
+## 🏆 Results
 
 - **Dataset Used**: Images were scraped from the web, categorized into `ellipta` and `mdi` classes.
 - **Final Accuracy**: 
@@ -104,32 +104,32 @@ Training & Validation Accuracy
 - **Performance on Unseen Data**: 
   - **Not yet tested**. Next steps include evaluating the model on completely unseen inhaler images to measure real-world performance.
 
-🛠️ Troubleshooting
+## 🛠️ Troubleshooting
 
 Common Issues & Fixes
 
-Issue	Solution
-PIL.UnidentifiedImageError	Run python src/standardise_images.py to clean dataset
-No images found in processed	Ensure prep_data.py has run correctly
-MPS TypeError (float64)	Ensure inhaler_finetune.py uses .float() instead of .double()
+Issue	-> Solution
+PIL.UnidentifiedImageError	-> Run python src/standardise_images.py to clean dataset  
+No images found in processed	-> Ensure prep_data.py has run correctly  
+MPS TypeError (float64)	-> Ensure inhaler_finetune.py uses .float() instead of .double()  
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-❤️ Acknowledgments
+## ❤️ Acknowledgments
 	•	PyTorch: For the deep learning framework.
 	•	ImageNet: For pre-trained ResNet weights.
 	•	Apple MPS Acceleration: Optimized for Apple Silicon.
 
-   ## ✅ To-Do
+## ✅ To-Do
 - [ ] Evaluate model performance on unseen inhaler images.
 - [ ] Expand dataset with more inhaler types.
 - [ ] Implement data augmentation for robustness.
 
-📌 Next Steps   
+## 📌 Next Steps   
 	•	Evaluate on additional test datasets.
 
-🔥 Want to Contribute?
+## 🔥 Want to Contribute?
 
 Pull requests are welcome! For major changes, please open an issue first to discuss. 🚀
