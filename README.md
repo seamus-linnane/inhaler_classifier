@@ -117,10 +117,10 @@ MPS TypeError (float64)	-> Ensure inhaler_finetune.py uses .float() instead of .
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## ❤️ Acknowledgments
-•	PyTorch: For the deep learning framework.
-•	ImageNet: For pre-trained ResNet weights.
-•	Apple MPS Acceleration: Optimized for Apple Silicon.
+## ❤️ Acknowledgments  
+•	PyTorch: For the deep learning framework.  
+•	ImageNet: For pre-trained ResNet weights.  
+•	Apple MPS Acceleration: Optimized for Apple Silicon.  
 
 ## ✅ To-Do  
 •	Evaluate model performance on unseen inhaler images.
