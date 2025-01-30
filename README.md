@@ -1,4 +1,4 @@
-# Inhaler Type Identifier
+# Identify an Inhaler from an Image
 
 An AI-powered project that uses deep learning to classify inhaler types from images. This project leverages transfer learning with pre-trained ResNet models for accurate and efficient image classification.
 
@@ -83,10 +83,10 @@ Training is included in main.py, but you can also run fine-tuning separately:
 python src/inhaler_finetune.py
 
 This will:  
-	•	Freeze pre-trained ResNet layers.
-	•	Train the classifier head for 6 epochs.
-	•	Fine-tune the entire network for 20 additional epochs.
-	•	Save the trained model in models/.
+	•	Freeze pre-trained ResNet layers.  
+	•	Train the classifier head for 6 epochs.  
+	•	Fine-tune the entire network for 20 additional epochs.  
+	•	Save the trained model in models/.  
 
 📊 Visualization
 
@@ -108,7 +108,7 @@ Training & Validation Accuracy
 
 Common Issues & Fixes
 
-Issue	-> Solution
+Issue	-> Solution   
 PIL.UnidentifiedImageError	-> Run python src/standardise_images.py to clean dataset  
 No images found in processed	-> Ensure prep_data.py has run correctly  
 MPS TypeError (float64)	-> Ensure inhaler_finetune.py uses .float() instead of .double()  
@@ -118,17 +118,17 @@ MPS TypeError (float64)	-> Ensure inhaler_finetune.py uses .float() instead of .
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## ❤️ Acknowledgments
-	•	PyTorch: For the deep learning framework.
-	•	ImageNet: For pre-trained ResNet weights.
-	•	Apple MPS Acceleration: Optimized for Apple Silicon.
+•	PyTorch: For the deep learning framework.
+•	ImageNet: For pre-trained ResNet weights.
+•	Apple MPS Acceleration: Optimized for Apple Silicon.
 
-## ✅ To-Do
-- [ ] Evaluate model performance on unseen inhaler images.
-- [ ] Expand dataset with more inhaler types.
-- [ ] Implement data augmentation for robustness.
+## ✅ To-Do  
+•	Evaluate model performance on unseen inhaler images.
+•	Expand dataset with more inhaler types.
+•	Implement data augmentation for robustness.
 
 ## 📌 Next Steps   
-	•	Evaluate on additional test datasets.
+•	Evaluate on additional test datasets.
 
 ## 🔥 Want to Contribute?
 
